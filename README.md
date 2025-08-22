@@ -40,19 +40,74 @@ APS是连接企业资源计划（ERP）系统和制造执行系统（MES）的�
 丰富的数据分析和可视化工具：提供实时的数据分析和可视化工具，帮助企业管理层做出更明智的生产决策。  
 系统集成：具有良好的系统集成能力和扩展性，可以与ERP、SCM、MES等其他管理系统无缝集成。  
 #### 项目部署：
+##### 1.环境准备
+
+1.1 安装docker 和docker-compose （如已经安装可以跳过）
+```
+curl -C- -O --retry 3 https://bctools.cn/jvs-docker && chmod a+x jvs-docker && ./jvs-docker -I
+```
+1.2 安装git
+```
+yum install -y git
+```
+#####  2.部署项目
+2.1 下载项目
+```
+git clone https://gitee.com/software-minister/jvs-aps.git && cd jvs-docker-compose && chmod -R 777 data && chmod -R 777 mysql && chmod -R 644 data/mysqlcnf
+```
+2.2 替换服务器ip地址  
+请将${ip}修改为本地服务器IP
+```
+sed -i -e 's/server-ip/${ip}/g'  ./mysql/nacos.sql 
+```
+例:
+sed -i -e 's/server-ip/114.114.114.114/g'  ./mysql/nacos.sql  
+2.3 部署数据库
+```
+docker-compose -f docker-compose-db.yml pull 
+docker-compose -f docker-compose-db.yml up jvs-mysql 
+```
+初始化数据库的时候比较慢和主机性能相关，出现如图  
+![输入图片说明](img/1.png)  
+效果就可以 Ctrl+C 退出当前操作；继续下面的操作  
+```
+docker-compose -f docker-compose-db.yml  up -d
+```
+查看日志是否报错   
+`docker-compose -f docker-compose-db.yml logs -f`      
+2.4 查看nacos  
+程序依赖nacos 请保证能正常访问nacos后再执行应用部署  
+```
+http://服务器ip:8848/nacos   
+```
+账号：nacos  
+密码：nacos  
+2.5 启动基础后台框架
+```
+docker-compose -f docker-compose-base.yml pull
+docker-compose -f docker-compose-base.yml up -d
+```
+查看日志是否报错  
+`docker-compose -f docker-compose-base.yml logs -f`  
+2.6 APS服务
 ```
 docker-compose -f docker-compose-aps.yml pull
 docker-compose -f docker-compose-aps.yml up -d
 ```
-
-查看日志是否报错
-
+查看日志是否报错   
 `docker-compose -f docker-compose-aps.yml logs -f`
 
-访问系统：  
-http://服务器ip:9998
-
-
+#####  3.访问地址
+3.1 账号密码  
+3.2 访问后台（含开发套件）  
+http://localhost:8088  
+帐号：admin 密码: 123456  
+3.3 访问APS
+http://localhost:9998   
+帐号：admin 密码: 123456  
+3.4 nacos地址  
+http://localhost:8848/nacos  
+帐号：nacos 密码: nacos
 
 #### 版本说明
 ![输入图片说明](pic/image55.png)

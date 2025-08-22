@@ -1,0 +1,494 @@
+[
+    {
+        "label": "风景",
+        "inter": "message.coverType.landscape",
+        "url": "/jvs-public/img/风景/a4.png",
+        "value": "a4.png"
+    },
+    {
+        "label": "商业",
+        "inter": "message.coverType.commercial",
+        "url": "/jvs-public/img/商业/a8.png",
+        "value": "a8.png"
+    },
+    {
+        "label": "办公",
+        "inter": "message.coverType.office",
+        "url": "/jvs-public/img/办公/a1.png",
+        "value": "a1.png"
+    },
+    {
+        "label": "风景",
+        "inter": "message.coverType.landscape",
+        "url": "/jvs-public/img/风景/a10.png",
+        "value": "a10.png"
+    },
+    {
+        "label": "科技",
+        "inter": "message.coverType.technology",
+        "url": "/jvs-public/img/科技/a7.png",
+        "value": "a7.png"
+    },
+    {
+        "label": "办公",
+        "inter": "message.coverType.office",
+        "url": "/jvs-public/img/办公/a8.png",
+        "value": "a8.png"
+    },
+    {
+        "label": "商业",
+        "inter": "message.coverType.commercial",
+        "url": "/jvs-public/img/商业/a1.png",
+        "value": "a1.png"
+    },
+    {
+        "label": "简约",
+        "inter": "message.coverType.minimalist",
+        "url": "/jvs-public/img/简约/a6.png",
+        "value": "a6.png"
+    },
+    {
+        "label": "建筑",
+        "inter": "message.coverType.architecture",
+        "url": "/jvs-public/img/建筑/a4.png",
+        "value": "a4.png"
+    },
+    {
+        "label": "建筑",
+        "inter": "message.coverType.architecture",
+        "url": "/jvs-public/img/建筑/a5.png",
+        "value": "a5.png"
+    },
+    {
+        "label": "科技",
+        "inter": "message.coverType.technology",
+        "url": "/jvs-public/img/科技/a6.png",
+        "value": "a6.png"
+    },
+    {
+        "label": "简约",
+        "inter": "message.coverType.minimalist",
+        "url": "/jvs-public/img/简约/a7.png",
+        "value": "a7.png"
+    },
+    {
+        "label": "建筑",
+        "inter": "message.coverType.architecture",
+        "url": "/jvs-public/img/建筑/a10.png",
+        "value": "a10.png"
+    },
+    {
+        "label": "商业",
+        "inter": "message.coverType.commercial",
+        "url": "/jvs-public/img/商业/a9.png",
+        "value": "a9.png"
+    },
+    {
+        "label": "科技",
+        "inter": "message.coverType.technology",
+        "url": "/jvs-public/img/科技/a10.png",
+        "value": "a10.png"
+    },
+    {
+        "label": "商业",
+        "inter": "message.coverType.commercial",
+        "url": "/jvs-public/img/商业/a10.png",
+        "value": "a10.png"
+    },
+    {
+        "label": "风景",
+        "inter": "message.coverType.landscape",
+        "url": "/jvs-public/img/风景/a3.png",
+        "value": "a3.png"
+    },
+    {
+        "label": "商业",
+        "inter": "message.coverType.commercial",
+        "url": "/jvs-public/img/商业/a2.png",
+        "value": "a2.png"
+    },
+    {
+        "label": "风景",
+        "inter": "message.coverType.landscape",
+        "url": "/jvs-public/img/风景/a12.png",
+        "value": "a12.png"
+    },
+    {
+        "label": "科技",
+        "inter": "message.coverType.technology",
+        "url": "/jvs-public/img/科技/a11.png",
+        "value": "a11.png"
+    },
+    {
+        "label": "风景",
+        "inter": "message.coverType.landscape",
+        "url": "/jvs-public/img/风景/a6.png",
+        "value": "a6.png"
+    },
+    {
+        "label": "科技",
+        "inter": "message.coverType.technology",
+        "url": "/jvs-public/img/科技/a5.png",
+        "value": "a5.png"
+    },
+    {
+        "label": "商业",
+        "inter": "message.coverType.commercial",
+        "url": "/jvs-public/img/商业/a6.png",
+        "value": "a6.png"
+    },
+    {
+        "label": "商业",
+        "inter": "message.coverType.commercial",
+        "url": "/jvs-public/img/商业/a11.png",
+        "value": "a11.png"
+    },
+    {
+        "label": "简约",
+        "inter": "message.coverType.minimalist",
+        "url": "/jvs-public/img/简约/a8.png",
+        "value": "a8.png"
+    },
+    {
+        "label": "建筑",
+        "inter": "message.coverType.architecture",
+        "url": "/jvs-public/img/建筑/a6.png",
+        "value": "a6.png"
+    },
+    {
+        "label": "简约",
+        "inter": "message.coverType.minimalist",
+        "url": "/jvs-public/img/简约/a4.png",
+        "value": "a4.png"
+    },
+    {
+        "label": "建筑",
+        "inter": "message.coverType.architecture",
+        "url": "/jvs-public/img/建筑/a2.png",
+        "value": "a2.png"
+    },
+    {
+        "label": "科技",
+        "inter": "message.coverType.technology",
+        "url": "/jvs-public/img/科技/a9.png",
+        "value": "a9.png"
+    },
+    {
+        "label": "商业",
+        "inter": "message.coverType.commercial",
+        "url": "/jvs-public/img/商业/a3.png",
+        "value": "a3.png"
+    },
+    {
+        "label": "科技",
+        "inter": "message.coverType.technology",
+        "url": "/jvs-public/img/科技/a15.png",
+        "value": "a15.png"
+    },
+    {
+        "label": "办公",
+        "inter": "message.coverType.office",
+        "url": "/jvs-public/img/办公/a7.png",
+        "value": "a7.png"
+    },
+    {
+        "label": "简约",
+        "inter": "message.coverType.minimalist",
+        "url": "/jvs-public/img/简约/a10.png",
+        "value": "a10.png"
+    },
+    {
+        "label": "商业",
+        "inter": "message.coverType.commercial",
+        "url": "/jvs-public/img/商业/a7.png",
+        "value": "a7.png"
+    },
+    {
+        "label": "风景",
+        "inter": "message.coverType.landscape",
+        "url": "/jvs-public/img/风景/a11.png",
+        "value": "a11.png"
+    },
+    {
+        "label": "建筑",
+        "inter": "message.coverType.architecture",
+        "url": "/jvs-public/img/建筑/a13.png",
+        "value": "a13.png"
+    },
+    {
+        "label": "风景",
+        "inter": "message.coverType.landscape",
+        "url": "/jvs-public/img/风景/a5.png",
+        "value": "a5.png"
+    },
+    {
+        "label": "风景",
+        "inter": "message.coverType.landscape",
+        "url": "/jvs-public/img/风景/a7.png",
+        "value": "a7.png"
+    },
+    {
+        "label": "科技",
+        "inter": "message.coverType.technology",
+        "url": "/jvs-public/img/科技/a14.png",
+        "value": "a14.png"
+    },
+    {
+        "label": "建筑",
+        "inter": "message.coverType.architecture",
+        "url": "/jvs-public/img/建筑/a11.png",
+        "value": "a11.png"
+    },
+    {
+        "label": "科技",
+        "inter": "message.coverType.technology",
+        "url": "/jvs-public/img/科技/a12.png",
+        "value": "a12.png"
+    },
+    {
+        "label": "简约",
+        "inter": "message.coverType.minimalist",
+        "url": "/jvs-public/img/简约/a5.png",
+        "value": "a5.png"
+    },
+    {
+        "label": "商业",
+        "inter": "message.coverType.commercial",
+        "url": "/jvs-public/img/商业/a5.png",
+        "value": "a5.png"
+    },
+    {
+        "label": "建筑",
+        "inter": "message.coverType.architecture",
+        "url": "/jvs-public/img/建筑/a3.png",
+        "value": "a3.png"
+    },
+    {
+        "label": "商业",
+        "inter": "message.coverType.commercial",
+        "url": "/jvs-public/img/商业/a12.png",
+        "value": "a12.png"
+    },
+    {
+        "label": "建筑",
+        "inter": "message.coverType.architecture",
+        "url": "/jvs-public/img/建筑/a12.png",
+        "value": "a12.png"
+    },
+    {
+        "label": "科技",
+        "inter": "message.coverType.technology",
+        "url": "/jvs-public/img/科技/a8.png",
+        "value": "a8.png"
+    },
+    {
+        "label": "科技",
+        "inter": "message.coverType.technology",
+        "url": "/jvs-public/img/科技/a13.png",
+        "value": "a13.png"
+    },
+    {
+        "label": "办公",
+        "inter": "message.coverType.office",
+        "url": "/jvs-public/img/办公/a9.png",
+        "value": "a9.png"
+    },
+    {
+        "label": "建筑",
+        "inter": "message.coverType.architecture",
+        "url": "/jvs-public/img/建筑/a14.png",
+        "value": "a14.png"
+    },
+    {
+        "label": "办公",
+        "inter": "message.coverType.office",
+        "url": "/jvs-public/img/办公/a12.png",
+        "value": "a12.png"
+    },
+    {
+        "label": "建筑",
+        "inter": "message.coverType.architecture",
+        "url": "/jvs-public/img/建筑/a8.png",
+        "value": "a8.png"
+    },
+    {
+        "label": "建筑",
+        "inter": "message.coverType.architecture",
+        "url": "/jvs-public/img/建筑/a1.png",
+        "value": "a1.png"
+    },
+    {
+        "label": "简约",
+        "inter": "message.coverType.minimalist",
+        "url": "/jvs-public/img/简约/a3.png",
+        "value": "a3.png"
+    },
+    {
+        "label": "风景",
+        "inter": "message.coverType.landscape",
+        "url": "/jvs-public/img/风景/a1.png",
+        "value": "a1.png"
+    },
+    {
+        "label": "商业",
+        "inter": "message.coverType.commercial",
+        "url": "/jvs-public/img/商业/a4.png",
+        "value": "a4.png"
+    },
+    {
+        "label": "科技",
+        "inter": "message.coverType.technology",
+        "url": "/jvs-public/img/科技/a3.png",
+        "value": "a3.png"
+    },
+    {
+        "label": "办公",
+        "inter": "message.coverType.office",
+        "url": "/jvs-public/img/办公/a4.png",
+        "value": "a4.png"
+    },
+    {
+        "label": "风景",
+        "inter": "message.coverType.landscape",
+        "url": "/jvs-public/img/风景/a8.png",
+        "value": "a8.png"
+    },
+    {
+        "label": "简约",
+        "inter": "message.coverType.minimalist",
+        "url": "/jvs-public/img/简约/a9.png",
+        "value": "a9.png"
+    },
+    {
+        "label": "科技",
+        "inter": "message.coverType.technology",
+        "url": "/jvs-public/img/科技/a4.png",
+        "value": "a4.png"
+    },
+    {
+        "label": "建筑",
+        "inter": "message.coverType.architecture",
+        "url": "/jvs-public/img/建筑/a7.png",
+        "value": "a7.png"
+    },
+    {
+        "label": "风景",
+        "inter": "message.coverType.landscape",
+        "url": "/jvs-public/img/风景/a15.png",
+        "value": "a15.png"
+    },
+    {
+        "label": "风景",
+        "inter": "message.coverType.landscape",
+        "url": "/jvs-public/img/风景/a13.png",
+        "value": "a13.png"
+    },
+    {
+        "label": "办公",
+        "inter": "message.coverType.office",
+        "url": "/jvs-public/img/办公/a5.png",
+        "value": "a5.png"
+    },
+    {
+        "label": "风景",
+        "inter": "message.coverType.landscape",
+        "url": "/jvs-public/img/风景/a9.png",
+        "value": "a9.png"
+    },
+    {
+        "label": "办公",
+        "inter": "message.coverType.office",
+        "url": "/jvs-public/img/办公/a6.png",
+        "value": "a6.png"
+    },
+    {
+        "label": "办公",
+        "inter": "message.coverType.office",
+        "url": "/jvs-public/img/办公/a13.png",
+        "value": "a13.png"
+    },
+    {
+        "label": "风景",
+        "inter": "message.coverType.landscape",
+        "url": "/jvs-public/img/风景/a14.png",
+        "value": "a14.png"
+    },
+    {
+        "label": "简约",
+        "inter": "message.coverType.minimalist",
+        "url": "/jvs-public/img/简约/a2.png",
+        "value": "a2.png"
+    },
+    {
+        "label": "建筑",
+        "inter": "message.coverType.architecture",
+        "url": "/jvs-public/img/建筑/a15.png",
+        "value": "a15.png"
+    },
+    {
+        "label": "办公",
+        "inter": "message.coverType.office",
+        "url": "/jvs-public/img/办公/a10.png",
+        "value": "a10.png"
+    },
+    {
+        "label": "风景",
+        "inter": "message.coverType.landscape",
+        "url": "/jvs-public/img/风景/a2.png",
+        "value": "a2.png"
+    },
+    {
+        "label": "简约",
+        "inter": "message.coverType.minimalist",
+        "url": "/jvs-public/img/简约/a1.png",
+        "value": "a1.png"
+    },
+    {
+        "label": "建筑",
+        "inter": "message.coverType.architecture",
+        "url": "/jvs-public/img/建筑/a16.png",
+        "value": "a16.png"
+    },
+    {
+        "label": "办公",
+        "inter": "message.coverType.office",
+        "url": "/jvs-public/img/办公/a3.png",
+        "value": "a3.png"
+    },
+    {
+        "label": "风景",
+        "inter": "message.coverType.landscape",
+        "url": "/jvs-public/img/风景/a16.png",
+        "value": "a16.png"
+    },
+    {
+        "label": "建筑",
+        "inter": "message.coverType.architecture",
+        "url": "/jvs-public/img/建筑/a9.png",
+        "value": "a9.png"
+    },
+    {
+        "label": "办公",
+        "inter": "message.coverType.office",
+        "url": "/jvs-public/img/办公/a11.png",
+        "value": "a11.png"
+    },
+    {
+        "label": "科技",
+        "inter": "message.coverType.technology",
+        "url": "/jvs-public/img/科技/a2.png",
+        "value": "a2.png"
+    },
+    {
+        "label": "科技",
+        "inter": "message.coverType.technology",
+        "url": "/jvs-public/img/科技/a1.png",
+        "value": "a1.png"
+    },
+    {
+        "label": "办公",
+        "inter": "message.coverType.office",
+        "url": "/jvs-public/img/办公/a2.png",
+        "value": "a2.png"
+    }
+]

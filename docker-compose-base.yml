@@ -1,0 +1,89 @@
+version: '3'
+services:
+
+  #后台服务
+  jvs-ui:
+    restart: always
+    image: ${dockerName}/jvs-ui:${JVSVERSION}
+    container_name: jvs-ui
+    volumes:
+      - ./data/default.conf:/etc/nginx/conf.d/default.conf
+    ports:
+      - 8088:80
+  #网关
+  jvs-gateway:
+    restart: always
+    image: ${dockerName}/jvs-gateway:${JVSVERSION}
+    container_name: gateway
+    environment:
+      nacosAddr: ${nacosAddr}
+      namespace: ${namespace}
+      skyip: ${skyip}
+      authentication: ${authentication}
+      skywalkingPath: ${skywalkingPath}
+      JAVA_OPTS: -Xms125m -Xmx2024m
+    volumes:
+      - ./data/nacos/:/root/nacos/config
+      - ./data/log/:/log
+      - ./data/icon/:/icon
+      - ./zhmap/:/zhmap
+    ports:
+      - 10000:10000
+
+  #授权管理
+  jvs-auth-mgr:
+    restart: always
+    image: ${dockerName}/jvs-auth-mgr:${JVSVERSION}
+    container_name: jvs-auth-mgr
+    environment:
+      nacosAddr: ${nacosAddr}
+      namespace: ${namespace}
+      skyip: ${skyip}
+      authentication: ${authentication}
+      skywalkingPath: ${skywalkingPath}
+      JAVA_OPTS: ${JAVA_OPTS} -Dserver.port=3001
+    volumes:
+      - ./data/nacos/:/root/nacos/config
+      - ./data/log/:/log
+    ports:
+      - 3001:3001
+  #授权中心
+  jvs-auth:
+    restart: always
+    image: ${dockerName}/jvs-auth:${JVSVERSION}
+    container_name: jvs-auth
+    environment:
+      nacosAddr: ${nacosAddr}
+      namespace: ${namespace}
+      skyip: ${skyip}
+      authentication: ${authentication}
+      skywalkingPath: ${skywalkingPath}
+      JAVA_OPTS: ${JAVA_OPTS}
+    volumes:
+      - ./data/nacos/:/root/nacos/config
+      - ./data/log/:/log
+    ports:
+      - 31000:31000
+  #消息管理
+  jvs-message-mgr:
+    restart: always
+    image: ${dockerName}/jvs-message-push:${JVSVERSION}
+    container_name: jvs-message-push
+    environment:
+      nacosAddr: ${nacosAddr}
+      namespace: ${namespace}
+      skyip: ${skyip}
+      authentication: ${authentication}
+      skywalkingPath: ${skywalkingPath}
+      JAVA_OPTS: ${JAVA_OPTS} -Dserver.port=48080
+    ports:
+      - 48080:48080
+    volumes:
+      - ./data/nacos/:/root/nacos/config
+      - ./data/log/:/log
+      
+networks:
+  proxy:
+    ipam:
+      config:
+        - subnet: 10.0.0.1/24

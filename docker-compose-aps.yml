@@ -1,40 +1,9 @@
 version: '3'
 services:
-  jvs-mysql:
-    image: mysql:8.0.32
-    container_name: jvs-mysql
-    volumes:
-      - ./data/mysql/:/var/lib/mysql
-      - ./data/mysqlcnf/my.cnf:/etc/mysql/my.cnf
-      - ./mysql:/docker-entrypoint-initdb.d # 初始化数据
-    # 挂载配置文件目录
-    environment:
-      - MYSQL_ROOT_PASSWORD=root
-      - MYSQL_ROOT_HOST=%
-      - TZ=Asia/Shanghai
-    ports:
-      - "3306:3306"
+  jvs-aps-mgr:
     restart: always
-  jvs-redis:
-    container_name: jvs-redis
-    image: redis:6.0
-    restart: always
-    privileged: true
-    # 多个命令同时执行
-    command:
-      - /bin/bash
-      - -c
-      - |
-        echo 551 > /proc/sys/net/core/somaxconn
-        redis-server --requirepass "redis"
-    volumes:
-      - ./data/redis/:/data
-    ports:
-      - 6379:6379
-  jvs-aps:
-    restart: always
-    image: registry.cn-hangzhou.aliyuncs.com/rkqf/jvs-aps:1.0
-    container_name: jvs-aps
+    image: ${dockerName}/jvs-aps-mgr:${JVSVERSION}
+    container_name: jvs-aps-mgr
     environment:
       nacosAddr: ${nacosAddr}
       namespace: ${namespace}
@@ -49,8 +18,13 @@ services:
       - ./data/log/:/log
   jvs-aps-ui:
     restart: always
-    image: registry.cn-hangzhou.aliyuncs.com/rkqf/jvs-aps-ui:1.0
+    image: ${dockerName}/jvs-aps-ui:${JVSVERSION}
     container_name: jvs-aps-ui
     ports:
       - 9998:80
-
+#桥接网络
+networks:
+  proxy:
+    ipam:
+      config:
+        - subnet: 10.0.0.1/24
