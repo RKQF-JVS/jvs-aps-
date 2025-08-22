@@ -39,9 +39,15 @@ APS是连接企业资源计划（ERP）系统和制造执行系统（MES）的�
 - 数据驱动  
 丰富的数据分析和可视化工具：提供实时的数据分析和可视化工具，帮助企业管理层做出更明智的生产决策。  
 系统集成：具有良好的系统集成能力和扩展性，可以与ERP、SCM、MES等其他管理系统无缝集成。  
+#### 项目部署：
+```
+docker-compose -f docker-compose-aps.yml pull
+docker-compose -f docker-compose-aps.yml up -d
+```
 
+查看日志是否报错
 
-
+`docker-compose -f docker-compose-aps.yml logs -f`
 
 访问系统：  
 http://服务器ip:9998
