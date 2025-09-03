@@ -99,13 +99,13 @@ docker-compose -f docker-compose-aps.yml up -d
 
 #####  3.访问地址   
 3.1 访问后台（含开发套件）  
-http://localhost:8088  
+http://服务器ip:8088  
 帐号：admin 密码: 123456  
 3.2 访问APS
-http://localhost:9998   
+http://服务器ip:9998   
 帐号：admin 密码: 123456  
 3.3 nacos地址  
-http://localhost:8848/nacos  
+http://服务器ip:8848/nacos  
 帐号：nacos 密码: nacos
 
 #### 版本说明
