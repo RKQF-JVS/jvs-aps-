@@ -53,7 +53,7 @@ yum install -y git
 #####  2.部署项目
 2.1 下载项目
 ```
-git clone https://gitee.com/software-minister/jvs-aps.git && cd jvs-docker-compose && chmod -R 777 data && chmod -R 777 mysql && chmod -R 644 data/mysqlcnf
+git clone https://gitee.com/software-minister/jvs-aps.git && cd jvs-aps && chmod -R 777 data && chmod -R 777 mysql && chmod -R 644 data/mysqlcnf
 ```
 2.2 替换服务器ip地址  
 请将${ip}修改为本地服务器IP
