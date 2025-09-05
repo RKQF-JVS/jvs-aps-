@@ -143,7 +143,7 @@ public class ProductionTaskUtils {
                     Duration leadTimeDuration = material.getLeadTimeDuration();
                     Duration bufferTimeDuration = material.getBufferTimeDuration();
                     return leadTimeDuration.plus(bufferTimeDuration);
-                }));
+                },(oldVal, newVal) -> newVal));
     }
 
 
