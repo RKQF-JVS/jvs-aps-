@@ -1384,5 +1384,28 @@ CREATE TABLE `jvs_work_report`  (
 -- ----------------------------
 -- Records of jvs_work_report
 -- ----------------------------
+ALTER TABLE `jvs-aps`.`jvs_plan_log` ADD COLUMN `strategy_name` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT NULL COMMENT '策略名称' AFTER `id`;
 
+ALTER TABLE `jvs-aps`.`jvs_plan_log` ADD COLUMN `strategy_config` json NULL COMMENT '策略基本配置' AFTER `task_size`;
+
+ALTER TABLE `jvs-aps`.`jvs_plan_log` DROP COLUMN `name`;
+
+CREATE TABLE `jvs-aps`.`jvs_production_resource_event`  (
+  `id` char(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL DEFAULT '' COMMENT '主键',
+  `resource_id` char(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT NULL COMMENT '主资源id',
+  `event_type` enum('UNPLANNED_FAILURE','PLANNED_MAINTENANCE') CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT NULL COMMENT '事件类型',
+  `start_time` datetime NULL DEFAULT NULL COMMENT '事件开始时间',
+  `end_time` datetime NULL DEFAULT NULL COMMENT '事件结束时间',
+  `description` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT NULL COMMENT '备注',
+  `del_flag` tinyint(1) NULL DEFAULT 0 COMMENT '是否删除 0未删除  1已删除',
+  `create_by` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT NULL COMMENT '创建者姓名',
+  `create_by_id` char(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT NULL COMMENT '创建者id',
+  `create_time` datetime NULL DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
+  `update_by` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT NULL COMMENT '修改人姓名',
+  `update_time` datetime NULL DEFAULT CURRENT_TIMESTAMP COMMENT '更新时间',
+  `tenant_id` char(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT NULL COMMENT '租户id',
+  PRIMARY KEY (`id`) USING BTREE,
+  INDEX `idx_tenant_id`(`tenant_id` ASC) USING BTREE,
+  INDEX `idx_resource_id`(`resource_id` ASC) USING BTREE
+) ENGINE = InnoDB CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci COMMENT = '主资源事件' ROW_FORMAT = DYNAMIC;
 SET FOREIGN_KEY_CHECKS = 1;
