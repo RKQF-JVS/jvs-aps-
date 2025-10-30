@@ -170,7 +170,7 @@ http://服务器ip:9998
 企业邮筒（Web邮箱客户端）：http://mailbox.bctools.cn/  
 
 ### 技术交流与商务支持
-<img width="208" height="345" alt="微信图片_20251022100945_115_235" src="https://github.com/user-attachments/assets/876f0949-d2e3-4491-af7b-401d5db23045" />
+<img width="193" height="298" alt="微信图片_20251030101817_119_235" src="https://github.com/user-attachments/assets/40e7b361-fa39-4872-ab7d-805aa46f81e2" />
 
 
 
