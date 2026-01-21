@@ -304,6 +304,7 @@ public class TaskTimeForwardServiceImpl implements TaskTimeService {
                     .toList();
             Optional<ProductionTask> optionalProductionTask = frontProductionTasks.stream()
                     .filter(job -> ObjectNull.isNotNull(job.getStartTime()))
+                    .filter(job -> ObjectNull.isNotNull(job.getEndTime()))
                     .max(Comparator.comparing(job -> calculateEarliestStartTimeAfterCompletion(job, job.getEndTime())));
             if (optionalProductionTask.isPresent()) {
                 // 最晚结束时间的前工序任务
