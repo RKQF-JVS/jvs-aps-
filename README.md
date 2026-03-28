@@ -113,15 +113,16 @@ http://服务器ip:8848/nacos
 
 
 #### 其他JVS推荐项目
-管理平台（含管理平台、低代码）：https://frame.bctools.cn/  
-数据智仓（数据分析平台）：http://bi.bctools.cn/  
-企业文档：http://knowledge.bctools.cn/  
-企业计划（项目管理）：http://teamwork.bctools.cn/  
-规则引擎：http://rules.bctools.cn/  
-逻辑引擎：http://logic.bctools.cn/  
-视频会议：http://meeting.bctools.cn/  
-智能排产(APS)：https://aps.bctools.cn/  
-企业邮筒（Web邮箱客户端）：http://mailbox.bctools.cn/  
+ - 管理平台（含管理平台）：https://frame.bctools.cn/ 
+ - 低代码套件（应用中心）：https://app.bctools.cn 
+ - 数据智仓（数据分析平台）：http://bi.bctools.cn/  
+ - 企业文档：http://knowledge.bctools.cn/  
+ - 企业计划（项目管理）：http://teamwork.bctools.cn/  
+ - 规则引擎：http://rules.bctools.cn/  
+ - 逻辑引擎：http://logic.bctools.cn/  
+ - 视频会议：http://meeting.bctools.cn/  
+ - 智能排产(APS)：https://aps.bctools.cn/  
+ - 企业邮筒（Web邮箱客户端）：http://mailbox.bctools.cn/  
 
 #### 技术社群
 技术交流群  
